@@ -22,7 +22,7 @@ kernel.iso: kernel.bin
 	cp $< iso/boot/
 
 	# Create grub config
-	echo 'set timeout=0' >> iso/boot/grub/grub.cfg
+	echo 'set timeout=0' > iso/boot/grub/grub.cfg
 	echo 'set default=0' >> iso/boot/grub/grub.cfg
 	echo 'menuentry "Torii OS" {' >> iso/boot/grub/grub.cfg
 	echo '	multiboot /boot/kernel.bin' >> iso/boot/grub/grub.cfg
