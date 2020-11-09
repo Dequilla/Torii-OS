@@ -35,5 +35,8 @@ kernel.iso: kernel.bin
 
 run: kernel.iso
 	VBoxManage startvm "Torii OS" --type emergencystop &
-	sleep 2 
+	sleep 1 
 	VBoxManage startvm "Torii OS" &
+
+	# Prettier console output
+	sleep 2 
